@@ -7,8 +7,10 @@ import '../styles/globals.css';
 const MyApp = ({ Component, pageProps }) => (
   <ThemeProvider enableSystem attribute="class">
     <div className="dark:bg-nft-dark bg-white min-h-screen">
-      <Navbar />
-      <Component {...pageProps} />
+      <Navbar />{' '}
+      <div className="pt-65">
+        <Component {...pageProps} />
+      </div>
       <Footer />
     </div>
 

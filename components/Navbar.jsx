@@ -28,7 +28,7 @@ const MenuItems = (isMobile, active, setActive) => {
               : 'dark:text-nft-gray-3 text-nft-gray-2'
           }`}
         >
-          {/* <Link href={generateLink(i)}>{item}</Link> */}
+          <Link href="">{item}</Link>
         </li>
       ))}
     </ul>
@@ -93,7 +93,6 @@ const Navbar = () => {
       </div>
 
       <div className="md:hidden flex">
-        MenuItems
         <ul className="list-none flexCenter flex-row">
           <MenuItems active={active} setActive={setActive} />
         </ul>

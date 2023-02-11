@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -20,7 +20,7 @@ const MenuItems = (isMobile) => {
             // setActive(item);
             // if (isMobile) setIsOpen(false);
           }}
-          className={`flex flex-row items-center font-poppins text-base font-semibold dark:hover:text-white hover:text-nft-dark mx-3 
+          className={`flex flex-row items-center font-poppins text-base font-semibold dark:hover:text-white hover:text-nft-dark mx-3
           ${
             active === item
               ? 'dark:text-white text-nft-black-1'

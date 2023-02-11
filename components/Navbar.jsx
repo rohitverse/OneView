@@ -5,12 +5,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import images from '../assets';
 
-const MenuItems = (isMobile) => {
+const MenuItems = (isMobile, active, setActive) => {
   const generateLink = () => {};
+
   return (
     <ul
       className={`list-none flexCenter flex-row ${
-        isMobile ? 'flex-col h-full' : undefined
+        isMobile && 'flex-col h-full'
       }`}
     >
       {['Explore NFTs', 'Listed NFTs', 'My NFTs'].map((item, i) => (
@@ -27,7 +28,7 @@ const MenuItems = (isMobile) => {
               : 'dark:text-nft-gray-3 text-nft-gray-2'
           }`}
         >
-          <Link href={generateLink(i)}>{item}</Link>
+          {/* <Link href={generateLink(i)}>{item}</Link> */}
         </li>
       ))}
     </ul>
@@ -94,7 +95,7 @@ const Navbar = () => {
       <div className="md:hidden flex">
         MenuItems
         <ul className="list-none flexCenter flex-row">
-          <MenuItems />
+          <MenuItems active={active} setActive={setActive} />
         </ul>
       </div>
     </nav>

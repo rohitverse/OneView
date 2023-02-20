@@ -1,5 +1,5 @@
 import React from 'react';
 
-const creatednfts = () => <div>creatednfts</div>;
+const creatednfts = () => <div>created-nfts</div>;
 
 export default creatednfts;

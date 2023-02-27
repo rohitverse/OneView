@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ResellNFT = () => (
+const NFTDetails = () => (
   <div>
-    <h1>className</h1>
+    <h1>NFTDetails</h1>
   </div>
 );
 
-export default ResellNFT;
+export default NFTDetails;

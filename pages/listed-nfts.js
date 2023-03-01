@@ -1,5 +1,5 @@
 import React from 'react';
 
-const creatednfts = () => <div> Created NFTs </div>;
+const creatednfts = () => <div> Create Your NFT Here NFTs </div>;
 
 export default creatednfts;
